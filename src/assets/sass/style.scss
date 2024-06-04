@@ -1,0 +1,8 @@
+@import "./variables/variables.scss";
+@import "./common/common.scss";
+@import "./pages/main.scss";
+@import "./pages/order.scss";
+@import "./common/responsive.scss";
+@media(max-width: 576px){
+    @import "./slider/slider.scss";
+}

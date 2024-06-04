@@ -1,0 +1,132 @@
+@media(min-width: 768px){
+    .banner__img.desktop{
+        display: block;
+    }
+    .banner__img.mobile{
+        display: none;
+    }
+}
+
+@media(max-width: 992px) and (min-width: 768px){
+    .banner {
+        .banner__content   {
+            h1{
+                .banner-txt__title--japanese{
+                    font-size: 30px;
+                    margin-bottom: 0;
+                }
+                .banner-txt__title--portuguese{
+                    font-size: 125px;
+                }
+            }
+            p{
+                width: 65%;
+            }
+        }
+    }
+    .ingredients{
+        gap: 25px;
+    }
+}
+
+@media(max-width: 768px){
+    /* general */
+    .container {
+        padding: 0 8%;
+    }
+
+    .margint-default {
+        margin-top: 50px;
+    }
+
+    .marginb-default {
+        margin-bottom: 50px;
+    }
+
+    .paddingt-default {
+        padding-top: 50px;
+    }
+
+    .paddingb-default {
+        padding-bottom: 50px;
+    }
+
+    /* header */
+
+    .logo{
+        display: block;
+        margin: auto;
+    }
+
+    /* main */
+
+    .banner__img.desktop{
+        display: none;
+    }
+    .banner__img.mobile{
+        display: block;
+    }
+    .banner{
+        .banner__content{
+            text-align: center;
+            justify-content: end;
+            margin-bottom: 15px;
+            padding: 15px 8%;
+            h1{
+                display: flex;
+                flex-direction: column-reverse;
+                .banner-txt__title--japanese {
+                    order: 1;
+                    font-size: 46px;
+                    writing-mode: horizontal-tb;
+                }
+                .banner-txt__title--portuguese{
+                    font-size: 120px;
+                }
+            }
+            p{
+                margin-top: 20px;
+                width: 100%;
+                font-weight: 500;
+                line-height: 20px;
+            }
+            .btn--blue{
+                display: none;
+            }
+        }
+    }
+    .secondary-title{
+        h2{
+            font-size: 24px;
+            line-height: 31px;
+        }
+        p{
+            margin-top: 15px;
+        }
+    }
+
+    .ingredients{
+        gap: 15px;
+    }
+
+    /* order */
+    .order{
+        flex-direction: column;
+        .order__infos{
+            width: 100%;
+            padding: 70px 15px;
+            h1{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        .order__prepared{
+            width: 100%;
+            padding: 70px 15px;
+            h2{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+}

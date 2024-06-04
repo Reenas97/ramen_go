@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: $light-grey;
+}
+
+//loader
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader.hidden {
+    display: none;
+}
+
+/* buttons */
+
+.btn--blue{
+    background: $main-blue;
+    border-radius: 50px;
+    width: 210px;
+    padding: 18px 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.78px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        transition: all ease 0.5s;
+        background: #141AC3;
+    }
+    &[disabled]{
+        background: #C5C5C5;
+        cursor: initial;
+    }
+    &[disabled]{
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+/* margins and paddings*/
+
+.container{
+    padding: 0 14%;
+}
+
+.margint-default{
+    margin-top: $section-spacing;
+}
+
+.marginb-default{
+    margin-bottom: $section-spacing;
+}
+
+.paddingt-default{
+    padding-top: $section-spacing;
+}
+
+.paddingb-default{
+    padding-bottom: $section-spacing;
+}
+
+/* header */
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 3%;
+}
+
+.secondary-title{
+    text-align: center;
+    color: #000000;
+    h2{
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 47.52px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

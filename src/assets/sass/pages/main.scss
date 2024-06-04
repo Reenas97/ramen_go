@@ -1,0 +1,107 @@
+.banner{
+    position: relative;
+    .banner__img{
+        width: 100%;
+        height: auto;
+    }
+    .banner__content{
+        padding: 20px 18%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            font-weight: 900;
+            .banner-txt__title--japanese{
+                color: $main-yellow;
+                writing-mode: vertical-rl;
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: 10px;
+                margin-bottom: 10px;
+            }
+            .banner-txt__title--portuguese{
+                color: $light-grey;
+                font-size: 160px;
+                line-height: 100px;
+                text-transform: uppercase;
+            }
+        }
+        p{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 25%;
+            margin: 10px 0 25px 0;
+        }
+    }
+
+}
+
+.ingredients{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 60px;
+    margin-top: 50px;
+    .ingredients__card{
+        background: $light-grey;
+        box-shadow: 0px 4px 12px 0px #E0DBBF99;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        min-height: 320px;
+        border-radius: 12px;
+        width: 100%;
+        cursor: pointer;
+        &:hover{
+            transition: all ease 0.5s;
+            box-shadow: 0px 4px 12px 0px #1820EF99;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        h3{
+            color: $main-blue;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 24px;
+        }
+        .ingredients-card-description{
+            color: #000000;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .ingredients-card-price{
+            color: $main-orange;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 24px;
+        }
+    }
+    .broth-selected, .protein-selected{
+        background: $main-blue;
+        h3{
+            color: #ffffff;
+        }
+        .ingredients-card-description{
+            color: #ffffff;
+        }
+        .ingredients-card-price{
+            color: $second-orange;
+        }
+    }
+}
+
+.place-order{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
